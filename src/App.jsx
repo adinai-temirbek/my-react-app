@@ -1,0 +1,54 @@
+import { useState } from "react";
+import reactLogo from "./assets/react.svg";
+import viteLogo from "/vite.svg";
+import "./App.css";
+
+function App() {
+    const [count, setCount] = useState(0);
+
+    const quotes = [
+        "Keep pushing, great things take time! 🚀",
+        "Coding is 90% debugging and 10% writing bugs on purpose.",
+        "Every bug is just an undiscovered feature. 😄",
+        "Small steps every day lead to big results. ✨",
+    ];
+
+    const randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
+
+    return (
+        <>
+            <div className="logos">
+                <a href="https://vite.dev" target="_blank">
+                    <img src={viteLogo} className="logo" alt="Vite logo" />
+                </a>
+                <a href="https://react.dev" target="_blank">
+                    <img src={reactLogo} className="logo react" alt="React logo" />
+                </a>
+            </div>
+
+            <h1 className="title">Welcome to My Cool Vite + React App 🚀</h1>
+
+            <div className="card">
+                <button className="btn" onClick={() => setCount((count) => count + 1)}>
+                    You clicked {count} times
+                </button>
+
+                <p>
+                    This is my customized React project.
+                    Edit <code>src/App.jsx</code> and save to see live updates!
+                </p>
+            </div>
+
+            <div className="quote-box">
+                <h3>✨ Today's Motivation ✨</h3>
+                <p>{randomQuote}</p>
+            </div>
+
+            <p className="read-the-docs">
+                Click the logos above to learn more about Vite & React
+            </p>
+        </>
+    );
+}
+
+export default App;

@@ -1,0 +1,39 @@
+.title {
+    font-size: 2.4rem; /* slightly bigger */
+    margin-top: 1.2rem;
+    color: #4fd1ff; /* softer, modern blue */
+    font-weight: 600; /* a bit bolder */
+    text-align: center; /* centered for better visual */
+}
+
+.btn {
+    background: linear-gradient(60deg, #6b70ff, #4fd1ff); /* smoother gradient */
+    border: none;
+    padding: 14px 26px; /* slightly bigger button */
+    border-radius: 12px;
+    font-size: 1.15rem;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* subtle shadow */
+}
+
+.btn:hover {
+    transform: scale(1.08);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.25); /* enhanced hover shadow */
+}
+
+.quote-box {
+    background: #252535; /* slightly lighter dark for contrast */
+    padding: 1.5rem 2rem; /* a bit more padding */
+    border-radius: 14px;
+    margin-top: 2rem;
+    color: #dcdcdc; /* softer text color */
+    width: 75%;
+    max-width: 520px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.35); /* deeper shadow */
+    text-align: center;
+    font-style: italic; /* gives it a quote feel */
+}
